@@ -60,28 +60,25 @@
     <div class="contact-form">
       <h2 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 300; margin-bottom: 0.5rem;">Send a message</h2>
 
-      <!-- 
-        To make this form work, sign up for a free account at https://formspree.io
-        Then replace YOUR_FORM_ID below with the ID they give you.
-      -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="249f1e2e-d82d-4de8-a16a-f8799330c7d9" />
 
         <div class="form-group">
-          <label for="name">Your Name</label>
+          <label for="name">YOUR NAME</label>
           <input type="text" id="name" name="name" placeholder="Jane Smith" required />
         </div>
 
         <div class="form-group">
-          <label for="email">Email Address</label>
+          <label for="email">EMAIL ADDRESS</label>
           <input type="email" id="email" name="email" placeholder="jane@example.com" required />
         </div>
 
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your project…" required></textarea>
         </div>
 
-        <button type="submit" class="btn" style="align-self: flex-start; background: none; font-family: var(--font-body);">Send Message</button>
+        <button type="submit" class="btn" style="align-self: flex-start; background: none; font-family: var(--font-body);">SEND MESSAGE</button>
 
       </form>
     </div>
